@@ -2,6 +2,8 @@
 This app is a video game discovery web app that helps you find new and interesting games to play. With GameHub, you can search for games by platform, genre, and more. 
 The application is mainly developed using React 18, TypeScript, and Chakra UI.
 
+Reference course: https://codewithmosh.com 
+
 ## Preview 
 <img width="1512" alt="Screenshot 2023-08-14 at 12 02 08 AM" src="https://github.com/leakin185/RAWG-Game-Hub-App/assets/65524912/2e9cf1ab-03df-4f57-9ff2-037b3336784b">
 
