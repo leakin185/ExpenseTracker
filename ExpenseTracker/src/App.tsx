@@ -5,7 +5,7 @@ import Table from "./components/Table";
 import { Box, Heading } from "@chakra-ui/react";
 import FilterOption from "./components/Filter";
 
-export interface Tracker {
+interface Tracker {
   totalExpenses: number;
   totalEarnings: number;
   searchType: String;
