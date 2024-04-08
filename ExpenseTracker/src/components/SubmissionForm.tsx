@@ -23,6 +23,12 @@ const SubmissionForm = ({ onSubmission }: Props) => {
     );
   };
 
+  const resetFormFields = () => {
+    if (expenseRef.current) expenseRef.current.value = "";
+    if (earningRef.current) earningRef.current.value = "";
+    if (descriptionRef.current) descriptionRef.current.value = "";
+  };
+
   return (
     <form
       onSubmit={(event) => {
@@ -33,6 +39,11 @@ const SubmissionForm = ({ onSubmission }: Props) => {
           const description = descriptionRef.current.value;
 
           onSubmission(expense, earning, description);
+          resetFormFields();
+          if (formType === "expense" && earningRef.current)
+            earningRef.current.focus();
+          if (formType === "earning" && expenseRef.current)
+            expenseRef.current.focus();
         }
       }}
     >
